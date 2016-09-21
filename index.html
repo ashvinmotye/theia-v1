@@ -1,13 +1,218 @@
+<!DOCTYPE html>
+
 <html>
 <head>
-	<title>Hello</title>
-</head>
-<body>
+	<!-- title of the page -->
+	<title>Theia</title>
 
-<h1>This is a test</h1>
-<h1>This is a test</h1>
-<h1>This is a test</h1>
-<h1>This is a test</h1>
+	<!-- adjusting viewport width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- inserting icon on browser tab -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- calling css file -->
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+	<!-- FIXED NAVIGATION -->
+	<nav></nav>
+
+	<!-- HEADER -->
+	<header>
+		<div class="container">
+			<div class="heading box">
+				<img src="assets/images/icon.png">
+				<h1>Download Theia</h1>
+				<h3>on <a href="#">Google Play</a></h3>
+				<a href="#"><img src="assets/images/google-button.png"></a>
+			</div>
+		</div>
+	</header>
+
+	<!-- DESCRIPTION -->
+	<section class="description">
+		<div class="container">
+			<div class="left-float box" id="android-demo">
+				<img src="assets/images/android-demo.png">
+			</div>
+
+			<div class="left-float box desc-notes">
+				<h1>Theia</h1>
+				<h3>Fast, Accurate, Efficient</h3>
+				<p>By using text-to-speech convertor, Theia is highly praised in its ability to serve blind or visually impaired persons having access to their emails.</p>
+				<p>version 1.0 for Android is now available!</p>
+			</div>
+
+			<div class="clearfix"></div>
+		</div>
+	</section>
+
+	<!-- INTRODUCTION -->
+	<section class="introduction clearfix">
+		<div class="container">
+			<div class="intro">
+				<h1><span>Introducing</span> Theia</h1>
+				<p>First launched in 2016, Theia has received a warm welcome from our targeted users as well as general public. Theia has taken the market by storm and is continuing to impress users on a daily basis.</p>
+
+				<p>Reviewers and users all alike have come under the mesmerising simplicity of the application, seduced by the overall UI and UX. The smoothness and accuracy of the app have been the most appreciated features.</p>
+
+				<p>Theia has been developed by technology enthusiast and student at the University of Mauritius, Akshi Boojhawon, in her final year project and co-engineered by Ashvin Motye.</p>
+			</div>
+
+			<div class="features">
+				<div class="feature-box left-float">
+					<img src="assets/images/fast.png">
+					<h4>Fast</h4>
+					<p>Get bamboozled by the processing speed of the app to render your text into speech.</p>
+				</div>
+
+				<div class="feature-box left-float">
+					<img src="assets/images/accurate.png">
+					<h4>Accurate</h4>
+					<p>Tested over a thousand samples, reviewed by our users, Theia will blow you away with 97% accurate conversion.</p>
+				</div>
+
+				<div class="feature-box">
+					<img src="assets/images/efficient.png">
+					<h4>Efficient</h4>
+					<p>Low power drainage, low memory usage, high quality output: what more to define efficiency?.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SAMPLES -->
+	<section class="samples">
+		<div class="container">
+			<h1>User Interface Screenshots</h1>
+
+			<div class="screens">
+				<img src="assets/images/screenshot.png">
+				<img src="assets/images/screenshot.png">
+				<img src="assets/images/screenshot.png">
+				<img src="assets/images/screenshot.png">
+			</div>
+		</div>
+	</section>
+
+	<!-- FEEDBACK -->
+	<section class="feedback">
+		<div class="container">
+			<h1>Feeback</h1>
+
+			<div class="user-feedback">
+				<p>Easy to use and encountered no problem so far. Great app to assist me in my daily tasks.</p>
+				<p>Happy Potter</p>
+			</div>
+
+			<div class="user-feedback">
+				<p>Easy to use and encountered no problem so far. Great app to assist me in my daily tasks.</p>
+				<p>Happy Potter</p>
+			</div>
+
+			<div class="user-feedback">
+				<p>Easy to use and encountered no problem so far. Great app to assist me in my daily tasks.</p>
+				<p>Happy Potter</p>
+			</div>
+
+			<div class="user-feedback">
+				<p>Easy to use and encountered no problem so far. Great app to assist me in my daily tasks.</p>
+				<p>Happy Potter</p>
+			</div>
+
+			<div>
+				<img src="assets/images/down-arrow.png" id="show-more">
+			</div>
+		</div>
+	</section>
+
+	<!-- FORMS -->
+	<section class="forms">
+		<div class="container">
+			<div class="box left-float" id="in-form">
+				<form>
+					<h1>Sign in</h1>
+					<div class="input-group">
+						<input type="text" id="username" name="username">
+						<label for="username">Username</label>
+					</div>
+
+					<br>
+
+					<div class="input-group">
+						<input type="password" id="user-pass" name="user-pass">
+						<label for="user-pass">Password</label>
+					</div>
+
+					<div>
+						<input type="submit" value="Continue">
+					</div>
+				</form>
+			</div>
+
+			<div class="box left-float" id="up-form">
+				<form>
+					<h1>Sign up</h1>
+					<div class="input-group">
+						<input type="text" id="fullname" name="fullname">
+						<label for="fullname">Full name</label>
+					</div>
+
+					<br>
+
+					<div class="input-group">
+						<input type="text" id="new-user" name="new-user">
+						<label for="new-user">Username</label>
+					</div>
+
+					<br>
+
+					<div class="input-group">
+						<input type="password" id="new-pass" name="new-pass">
+						<label for="new-pass">Password</label>
+					</div>
+
+					<br>
+
+					<div class="input-group">
+						<input type="password" id="confirm-pass" name="confirm-pass">
+						<label for="confirm-pass">Confirm password</label>
+					</div>
+
+					<div>
+						<input type="submit" value="Continue">
+					</div>
+				</form>
+			</div>
+
+			<div class="clearfix"></div>
+		</div>
+	</section>
+
+	<!-- EMAIL SUBSCRIPTION -->
+	<section class="email">
+		<h1>Email sign-up</h1>
+		<form>
+			<input type="email" placeholder="Enter email address">
+			<button id="subscribe">Subscribe</button>
+		</form>
+	</section>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="links">
+				<a href="#"><img src="assets/images/facebook.png"></a>
+				<a href="#"><img src="assets/images/google-plus.png"></a>
+				<a href="#"><img src="assets/images/instagram.png"></a>
+			</div>
+			
+			<p>&#169; Ashvin Motye | 2016</p>
+		</div>
+	</footer>
 
 </body>
 </html>
