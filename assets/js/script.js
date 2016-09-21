@@ -9,7 +9,7 @@ function toggleMenu() {
 		button.textContent = "X";
 
 		if (menu.className == "menu-toggle") {
-			button.textContent = "M"
+			button.textContent = "T"
 		}
 	});
 }
