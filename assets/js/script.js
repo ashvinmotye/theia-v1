@@ -1,4 +1,8 @@
-toggleMenu();
+init();
+
+function init() {
+	toggleMenu();
+}
 
 function toggleMenu() {
 	var button = document.getElementById("menu-nav");
@@ -13,3 +17,25 @@ function toggleMenu() {
 		}
 	});
 }
+
+// ******************************
+// Keep label up
+// when lose focus
+// pure JS
+// ******************************
+
+// function labelKeeper() {
+// 	var inputs = document.querySelectorAll("input");
+
+// 	for (i=0; i < (inputs.length - 1); i++) {
+// 		inputs[i].addEventListener("blur", function(){
+// 			var textValue = this.textContent;
+
+// 			if (textValue != "") {
+// 				this.classList.add("has-value");
+// 			} else {
+// 				this.classList.remove("has-value");
+// 			}
+// 		});
+// 	}	
+// }

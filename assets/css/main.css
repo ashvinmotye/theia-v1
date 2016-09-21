@@ -302,10 +302,10 @@ img#show-more:hover {
 	transition: all 0.2s ease-out;
 }
 
-input:focus + label {
+input:focus + label,
+.input-group input.has-value + label {
 	top: -8px;
 	font-size: 12px;
-	color: #A6B2B9;
 }
 
 input[type="text"],
@@ -323,7 +323,7 @@ input[type="password"] {
 	outline: none;
 }
 
-input[type="submit"] {
+button.submit-btn {
 	color: #EAEAEA;
 	background: none;
 	border: 2px solid #EAEAEA;
@@ -338,7 +338,7 @@ input[type="submit"] {
 	transition: all 0.2s ease-out;
 }
 
-input[type="submit"]:hover {
+button.submit-btn:hover {
 	background-color: #247EB4;
 	color: #EEEAE8;
 	border-color: #247EB4;
@@ -392,7 +392,7 @@ input[type="email"],
 }
 
 #subscribe:hover {
-	background: #BE3549;
+	background: #103D58;
 	color: #EEEAE8;
 }
 
