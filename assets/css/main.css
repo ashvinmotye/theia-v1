@@ -465,16 +465,6 @@ footer img {
 	margin-top: 5px;
 }
 
-#in-form, #up-form {
-	width: 100%;
-}
-
-#in-form {
-	padding-bottom: 30px;
-	margin-bottom: 30px;
-	border-bottom: 2px solid #759EB5;
-}
-
 }
 
 /****************************/
@@ -490,6 +480,16 @@ footer img {
 	width: 90%;
 	margin-left: 0px;
 	margin-right: 0px;
+}
+
+#in-form, #up-form {
+	width: 100%;
+}
+
+#in-form {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 2px solid #759EB5;
 }
 
 }
