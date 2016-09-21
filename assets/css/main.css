@@ -405,12 +405,6 @@ footer img {
 	margin-top: 5px;
 }
 
-.user-feedback {
-	width: 60%;
-	margin-left: 0px;
-	margin-right: 0px;	
-}
-
 #in-form, #up-form {
 	width: 100%;
 }
@@ -434,6 +428,8 @@ footer img {
 
 .user-feedback {
 	width: 90%;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 }
