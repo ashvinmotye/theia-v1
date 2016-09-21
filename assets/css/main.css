@@ -427,6 +427,11 @@ footer img {
 	width: 90%;
 }
 
+#in-form,
+#up-form {
+	width: 50%;
+}
+
 .heading {
 	width: 100%;
 }
