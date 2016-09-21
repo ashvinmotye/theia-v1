@@ -300,6 +300,9 @@ img#show-more:hover {
 	pointer-events: none;
 
 	transition: all 0.2s ease-out;
+
+	/*Fix in Firefox*/
+	left: 0
 }
 
 input:focus + label,
