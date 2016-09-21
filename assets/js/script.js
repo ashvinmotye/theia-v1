@@ -6,5 +6,10 @@ function toggleMenu() {
 
 	button.addEventListener("click", function(){
 		menu.classList.toggle("menu-toggle");
-	})
+		button.textContent = "X";
+
+		if (menu.className == "menu-toggle") {
+			button.textContent = "M"
+		}
+	});
 }
