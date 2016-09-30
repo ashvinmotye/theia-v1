@@ -42,6 +42,11 @@
 	clear: both;
 }
 
+.alert {	
+	display: block;
+	color: #00FFE9;
+}
+
 h1 {
 	font-size: 30px;
 }
@@ -144,7 +149,7 @@ header {
 	color: #DDDCDC;
 	padding: 30px 0 50px;
 
-	background: url("header.jpg");
+	background: url("../images/header.jpg");
 	background-size: cover;
 	background-position: center bottom;
 }
@@ -274,7 +279,7 @@ img#show-more:hover {
 	padding: 30px 0;
 	color: #EAEAEA;
 
-	background: url("form-back.jpg");
+	background: url("../images/form-back.jpg");
 	background-size: cover;
 	background-position: center bottom;
 }
@@ -326,7 +331,7 @@ input[type="password"] {
 	outline: none;
 }
 
-button.submit-btn {
+.submit-btn {
 	color: #EAEAEA;
 	background: none;
 	border: 2px solid #EAEAEA;
@@ -341,7 +346,7 @@ button.submit-btn {
 	transition: all 0.2s ease-out;
 }
 
-button.submit-btn:hover {
+.submit-btn:hover {
 	background-color: #247EB4;
 	color: #EEEAE8;
 	border-color: #247EB4;
@@ -360,7 +365,7 @@ button.submit-btn:hover {
 }
 
 input[type="email"],
-#subscribe {
+.subscribe {
 	background-color: transparent;
 	padding: 8px 24px;
 	border: 2px solid #EEEAE8;
@@ -385,18 +390,17 @@ input[type="email"],
    color: #EEEAE8;  
 }
 
-#subscribe {
+.subscribe {
 	margin-left: -7px;
-	color: #247EB4;
-	background: #EEEAE8;
+	background: #4CAF50;
 	cursor: pointer;
 
 	transition: all 0.2s ease-out;
 }
 
-#subscribe:hover {
-	background: #103D58;
-	color: #EEEAE8;
+.subscribe:hover {
+	background: #EEEAE8;
+	color: #247EB4;
 }
 
 /***************/
@@ -517,7 +521,7 @@ footer img:hover {
 }
 
 @media screen and (max-width: 470px) {
-	#subscribe {
+	.subscribe {
 		display: inline-block;
 		margin: 20px auto 0px;
 	}
@@ -528,4 +532,9 @@ footer img:hover {
 /****************************************/
 .menu-toggle {
 	transform: translateX(100%);
+}
+
+.disable {
+	pointer-events: none;
+	background: #103D58;
 }

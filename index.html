@@ -144,57 +144,57 @@
 	<section class="forms" id="details-forms">
 		<div class="container">
 			<div class="box left-float" id="in-form">
-				<form class="my-forms">
+				<form>
 					<h1>Sign in</h1>
 					<div class="input-group">
-						<input type="text" id="username" name="username">
+						<input type="text" name="username">
 						<label for="username">Username</label>
 					</div>
 
 					<br>
 
 					<div class="input-group">
-						<input type="password" id="user-pass" name="user-pass">
+						<input type="password" name="user-pass">
 						<label for="user-pass">Password</label>
 					</div>
 
 					<div>
-						<button class="submit-btn">Continue</button>
+						<button class="submit-btn disable" id="submit-in">Continue</button>
 					</div>
 				</form>
 			</div>
 
 			<div class="box left-float" id="up-form">
-				<form class="my-forms">
+				<form>
 					<h1>Sign up</h1>
 					<div class="input-group">
-						<input type="text" id="fullname" name="fullname">
+						<input type="text" name="fullname">
 						<label for="fullname">Full name</label>
 					</div>
 
 					<br>
 
 					<div class="input-group">
-						<input type="text" id="new-user" name="new-user">
+						<input type="text" name="new-user">
 						<label for="new-user">Username</label>
 					</div>
 
 					<br>
 
 					<div class="input-group">
-						<input type="password" id="new-pass" name="new-pass">
+						<input type="password" name="new-pass">
 						<label for="new-pass">Password</label>
 					</div>
 
 					<br>
 
 					<div class="input-group">
-						<input type="password" id="confirm-pass" name="confirm-pass">
+						<input type="password" name="confirm-pass">
 						<label for="confirm-pass">Confirm password</label>
 					</div>
 
 					<div>
-						<button class="submit-btn">Continue</button>
+						<button class="submit-btn disable" id="submit-up">Continue</button>
 					</div>
 				</form>
 			</div>
@@ -208,7 +208,8 @@
 		<h1>Email sign-up</h1>
 		<form>
 			<input type="email" placeholder="Enter email address">
-			<button id="subscribe">Subscribe</button>
+			<button class="subscribe disable">Subscribe</button>
+			<span class="alert" id="email-alert"></span>
 		</form>
 	</section>
 
@@ -227,7 +228,8 @@
 
 <script type="text/javascript" src="assets/js/lib/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="assets/js/jqueryScript.js"></script>
-<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/validate.js"></script>
+<script type="text/javascript" src="assets/js/menu.js"></script>
 
 </body>
 </html>
