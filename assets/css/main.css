@@ -273,6 +273,11 @@ img#show-more:hover {
 	background: #247EB4;
 }
 
+img + p {
+	margin-top: 0px;
+	font-size: 14px;
+}
+
 /***************/
 /*forms*/
 .forms {
@@ -537,4 +542,14 @@ footer img:hover {
 .disable {
 	pointer-events: none;
 	background: #103D58;
+}
+
+.hide {
+	display: none;
+}
+
+#show-more.rotate {
+	transform: rotate(180deg);
+	background: #247EB4;
+	transition: transform .3s;
 }

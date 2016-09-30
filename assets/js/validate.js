@@ -9,16 +9,17 @@ var button = document.querySelector("button.subscribe");
 // when a key is released
 // calling the function emailValidate()
 
-// focousout is fired when input is clicked
+// blur is fired when input has lost focus
 // but not filled
+// focus is fired when input has received focus
 // calling an anonymous functions
 email.addEventListener("keyup", emailValidate);
-email.addEventListener("focusout", function(){
+email.addEventListener("blur", function(){
 	if (email.value == "") {
 		msg.textContent = "Please enter an email address.";
 	}		
 });
-email.addEventListener("focusin", function(){
+email.addEventListener("focus", function(){
 	if (email.value == "") {
 		msg.textContent = "";
 	}
