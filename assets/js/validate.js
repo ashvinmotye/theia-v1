@@ -10,19 +10,12 @@ var button = document.querySelector("button.subscribe");
 // calling the function emailValidate()
 
 // blur is fired when input has lost focus
-// but not filled
-// focus is fired when input has received focus
-// calling an anonymous functions
+// calling an anonymous function
 email.addEventListener("keyup", emailValidate);
 email.addEventListener("blur", function(){
 	if (email.value == "") {
-		msg.textContent = "Please enter an email address.";
-	}		
-});
-email.addEventListener("focus", function(){
-	if (email.value == "") {
 		msg.textContent = "";
-	}
+	}		
 });
 
 // Declarating of emailValidate()
