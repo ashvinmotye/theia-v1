@@ -248,7 +248,7 @@ header {
 	width: 40%;
 	margin: 30px 2.5% 0;
 	padding: 20px;
-	border: 2px solid #247EB4;
+	border-bottom: 1px solid #247EB4;
 }
 
 .user-feedback p {
@@ -266,7 +266,8 @@ img#show-more {
 	border-radius: 100%;
 	width: 36px;
 	background: #9C9C9C;
-	transition: background 0.2s ease-out;
+	transform: rotate(0deg);
+	transition: background 0.2s ease-out, transform 0.3s;
 }
 
 img#show-more:hover {
@@ -274,6 +275,7 @@ img#show-more:hover {
 }
 
 img + p {
+	color: #9C9C9C;
 	margin-top: 0px;
 	font-size: 14px;
 }
@@ -551,5 +553,4 @@ footer img:hover {
 #show-more.rotate {
 	transform: rotate(180deg);
 	background: #247EB4;
-	transition: transform .3s;
 }
