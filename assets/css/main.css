@@ -390,7 +390,7 @@ input[type="password"] {
 	margin-top: 30px;
 }
 
-input[type="email"],
+input[name="email"],
 .subscribe {
 	background-color: transparent;
 	padding: 8px 24px;

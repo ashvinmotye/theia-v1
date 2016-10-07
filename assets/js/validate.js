@@ -1,6 +1,6 @@
 // selecting the needed elements
 // and storing in variables
-var email = document.querySelector("input[type=email]");
+var email = document.querySelector("input[name=email]");
 var msg = document.getElementById("email-alert");
 var button = document.querySelector("button.subscribe");
 
