@@ -151,60 +151,57 @@
 	<section class="forms" id="details-forms">
 		<div class="container">
 			<div class="box left-float" id="in-form">
-				<form name="sign-in-form">
+				<form name="sign-in-form" onsubmit="return validateIn()">
 					<h1>Sign in</h1>
 					<div class="input-group">
-						<input type="text" name="username" required>
+						<input type="text" name="username">
 						<label for="username">Username</label>
 					</div>
-
-					<br>
+					<span class="alert" id="username-alert"></span>
 
 					<div class="input-group">
-						<input type="password" name="user-pass" required minlength="8">
+						<input type="password" name="user-pass">
 						<label for="user-pass">Password</label>
 					</div>
+					<span class="alert" id="pass-alert"></span>
 
 					<div>
-						<button class="submit-btn disable" id="submit-in" type="submit">Continue</button>
+						<button class="submit-btn" id="submit-in" type="submit">Continue</button>
 					</div>
-					<span class="alert" id="in-alert"></span>
 				</form>
 			</div>
 
 			<div class="box left-float" id="up-form">
-				<form name="sign-up-form">
+				<form name="sign-up-form" onsubmit="return validateUp()">
 					<h1>Sign up</h1>
 					<div class="input-group">
-						<input type="text" name="fullname" required>
+						<input type="text" name="fullname">
 						<label for="fullname">Full name</label>
 					</div>
-
-					<br>
+					<span class="alert" id="name-alert"></span>
 
 					<div class="input-group">
-						<input type="text" name="new-user" required>
+						<input type="text" name="new-user">
 						<label for="new-user">Username</label>
 					</div>
-
-					<br>
+					<span class="alert" id="new-user-alert"></span>
 
 					<div class="input-group">
-						<input type="password" name="new-pass" required minlength="8">
+						<input type="password" name="new-pass">
 						<label for="new-pass">Password</label>
 					</div>
 
 					<br>
 
 					<div class="input-group">
-						<input type="password" name="confirm-pass" required minlength="8">
+						<input type="password" name="confirm-pass">
 						<label for="confirm-pass">Confirm password</label>
 					</div>
+					<span class="alert" id="new-pass-alert"></span>
 
 					<div>
-						<button class="submit-btn disable" id="submit-up" type="submit">Continue</button>
+						<button class="submit-btn" id="submit-up" type="submit">Continue</button>
 					</div>
-					<span class="alert" id="up-alert"></span>
 				</form>
 			</div>
 
@@ -215,7 +212,7 @@
 	<!-- EMAIL SUBSCRIPTION -->
 	<section class="email" id="mail-subscription">
 		<h1>Email sign-up</h1>
-		<form>
+		<form name="mail-subscription">
 			<input type="email" name="email" placeholder="Enter email address">
 			<button class="subscribe disable">Subscribe</button>
 			<span class="alert" id="email-alert"></span>
@@ -237,9 +234,10 @@
 
 <script type="text/javascript" src="assets/js/lib/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="assets/js/labelUp.js"></script>
-<script type="text/javascript" src="assets/js/validate.js"></script>
+<script type="text/javascript" src="assets/js/emailValidate.js"></script>
 <script type="text/javascript" src="assets/js/feedback.js"></script>
 <script type="text/javascript" src="assets/js/menu.js"></script>
+<script type="text/javascript" src="assets/js/validate.js"></script>
 
 </body>
 </html>
